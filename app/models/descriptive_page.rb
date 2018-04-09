@@ -1,0 +1,2 @@
+class DescriptivePage < ApplicationRecord
+end

@@ -1,0 +1,22 @@
+<%= form_with(model: descriptive_page, local: true) do |form| %>
+  <% if descriptive_page.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(descriptive_page.errors.count, "error") %> prohibited this descriptive_page from being saved:</h2>
+
+      <ul>
+      <% descriptive_page.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :link %>
+    <%= form.text_field :link, id: :descriptive_page_link %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
