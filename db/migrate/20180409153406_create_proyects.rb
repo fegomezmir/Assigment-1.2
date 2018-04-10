@@ -4,8 +4,8 @@ class CreateProyects < ActiveRecord::Migration[5.1]
       t.string :name
       t.text :description
       t.string :category
-      t.int :goal
-      t.int :money_colected
+      t.integer :goal
+      t.integer :money_colected
       t.date :expiration_date
       t.string :state
       t.date :start_date

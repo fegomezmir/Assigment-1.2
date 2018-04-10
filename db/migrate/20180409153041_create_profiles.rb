@@ -3,7 +3,7 @@ class CreateProfiles < ActiveRecord::Migration[5.1]
     create_table :profiles do |t|
       t.string :name
       t.string :nacionality
-      t.int :age
+      t.integer :age
       t.string :sex
 
       t.timestamps
