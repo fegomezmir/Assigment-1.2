@@ -1,2 +1,5 @@
 class Proyect < ApplicationRecord
+
+
+
 end

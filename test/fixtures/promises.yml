@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  value: 
-  Condition: MyString
+  value: 1
+  condition: MyText
+  buyer: MyString
 
 two:
-  value: 
-  Condition: MyString
+  value: 1
+  condition: MyText
+  buyer: MyString
