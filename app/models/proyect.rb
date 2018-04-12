@@ -1,4 +1,10 @@
 class Proyect < ApplicationRecord
+  has_one:descriptive_page
+  has_many:video
+  has_many:image
+  has_many:promise
+  has_many:admin
+  belongs_to:user
   validates :goal,  numericality: {:greater_than_or_equal_to => 0}
   validates :money_colected,  numericality: {:greater_than_or_equal_to => 0}
   before_save  do start_later end

@@ -1,5 +1,8 @@
 class User < ApplicationRecord
-  validates :email , format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, message: "Error" }
+has_one:profile
+has_many:proyect
+has_many:promise
+validates :email , format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, message: "Error" }
   validates :password, length: {in: 6..12}
   before_save do type end
 
